@@ -1,0 +1,2 @@
+# GD_DICT
+广东DICT
