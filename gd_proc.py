@@ -30,7 +30,7 @@ def main():
         print("4.调用解析客户名称的存储过程：")
         proc4 = cursor.callproc('zk_cgkhmc')
         time.sleep(10)
-        # 修改已有数据
+        # 为已有数据打标签
         upd = cursor.execute('update proc_data set rep_label =1 where 1=1 and rep_label is null')
         client.commit()
         end = time.clock()
